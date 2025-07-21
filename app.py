@@ -82,7 +82,7 @@ agente = create_react_agent(llm, herramientas, prompt_agente)
 agent_executor = AgentExecutor(agent=agente, tools=herramientas, verbose=True, handle_parsing_errors=True)
 
 # --- 5. Interfaz de Streamlit ---
-st.title("🤖 Asistente Investigador del Curso (Plan B)")
+st.title("🤖 Asistente Investigador")
 st.caption("Puedo buscar en los documentos del curso y también en internet.")
 
 if "chat_history" not in st.session_state:
